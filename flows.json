@@ -1,0 +1,76 @@
+[
+    {
+        "id": "26a5c8904225cae0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dca9071900e54959",
+        "type": "inject",
+        "z": "26a5c8904225cae0",
+        "name": "Dati Meteo Simulazione",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "stazione",
+        "payload": "{\"temp\":23.4,\"hum\":55,\"press\":1013,\"wind_speed\":4.2,\"wind_dir\":\"E\"}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "fbac09eda1c4edcd"
+            ]
+        ]
+    },
+    {
+        "id": "fbac09eda1c4edcd",
+        "type": "uibuilder",
+        "z": "26a5c8904225cae0",
+        "name": "stazione-meteo",
+        "topic": "",
+        "url": "stazione",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "7.5.0",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "editurl": "vscode://file/C:\\Users\\sissi\\.node-red\\uibuilder/stazione/?windowId=_blank",
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0f7512344aebb671",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-uibuilder": "7.5.0"
+        }
+    }
+]
