@@ -1,12 +1,16 @@
 {
   "name": "nodered-app",
   "version": "1.0.0",
+  "description": "Node-RED project su Render",
   "dependencies": {
     "node-red": "^3.1.0",
-    "node-red-dashboard": "^3.1.1"
+    "node-red-dashboard": "^3.6.6",
+    "node-red-contrib-uibuilder": "^5.0.0"
   },
   "scripts": {
     "start": "node-red -p 10000 -u ./data"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
-
